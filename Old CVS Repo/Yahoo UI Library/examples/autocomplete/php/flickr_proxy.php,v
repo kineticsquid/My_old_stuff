@@ -1,0 +1,61 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.38.38;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	b;
+permissions	666;
+commitid	b5845060f827bb8;
+filename	flickr_proxy.php;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@<?php
+// Yahoo! proxy
+
+// Hard-code hostname and path:
+define ('PATH', 'http://www.flickr.com/services/rest/');
+
+// Get all query params
+$query = "?";
+foreach ($_GET as $key => $value) {
+    $query .= urlencode($key)."=".urlencode($value)."&"; 
+}
+
+foreach ($_POST as $key => $value) {
+    $query .= $key."=".$value."&"; 
+}
+$query .= "&api_key=30cc0cf363608a1ffa3fc1631854c8b8";
+$url = PATH.$query;
+
+// Open the Curl session
+$session = curl_init($url);
+
+// Don't return HTTP headers. Do return the contents of the call
+curl_setopt($session, CURLOPT_HEADER, false);
+curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
+
+// Make the call
+$response = curl_exec($session);
+
+header("Content-Type: text/xml");
+echo $response;
+curl_close($session);
+
+?>
+@

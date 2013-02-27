@@ -1,0 +1,36 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.33.32;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	16fc45060e6b7829;
+filename	.classpath;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry path="src" kind="src"/>
+	<classpathentry path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/Java50" kind="con"/>
+	<classpathentry path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v5.5" kind="con"/>
+	<classpathentry path="org.eclipse.jst.j2ee.internal.web.container" kind="con"/>
+	<classpathentry path="build/classes" kind="output"/>
+</classpath>
+@

@@ -1,0 +1,61 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.33.31;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	16fc45060e6b7829;
+filename	Lesson4.html;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Lesson 4</title>
+</head>
+<body>
+<SCRIPT Language="JavaScript">
+<!-- hide from old browsers
+
+var myVariable = "This is a String"  // string
+document.write(myVariable)
+document.write("<BR>")
+
+myVariable = 45.55  // number
+document.write(myVariable)
+document.write("<BR>")
+
+myVariable = true  // Boolean
+document.write(myVariable)
+document.write("<BR>")
+
+var myVariable = null  // Null
+document.write(myVariable)
+document.write("<BR>")
+
+myVariable = new Date  // object
+document.write(myVariable)
+document.write("<BR>")
+
+//-->
+</SCRIPT>
+</body>
+</html>@

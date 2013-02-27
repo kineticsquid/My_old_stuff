@@ -1,0 +1,49 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.33.31;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	16fc45060e6b7829;
+filename	Lesson7.html;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Lesson 7</title>
+</head>
+<body>
+<h1>Lesson 7</h1>
+<FORM name="demo">
+Output: <INPUT type="text" name="out" size=40>
+<P>
+Input: <INPUT type="text" name="inP" size=40>
+<P>
+<INPUT type="button" name="button1"
+value="Display in Alert" 
+onClick="alert(document.demo.inP.value)">
+<INPUT type="button" name="button2" 
+value="Transfer" 
+onClick="document.demo.out.value=document.demo.inP.value">
+</FORM>
+</body>
+</html>@

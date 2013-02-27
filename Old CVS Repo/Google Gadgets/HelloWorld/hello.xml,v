@@ -1,0 +1,36 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.33.07;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	bb845060e5377db;
+filename	hello.xml;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+  <ModulePrefs title="hello world example" /> 
+  <Content type="html">
+     <![CDATA[ 
+       Hello, world!
+     ]]>
+  </Content> 
+</Module>@

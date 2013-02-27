@@ -1,0 +1,37 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.06.05.09.34.17;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	10984483fa9830f3;
+filename	contexts.xml;
+
+
+desc
+@@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@<contexts>
+	<context id="main" title="Sudoku Puzzle Solver">
+		<description>Eclipse plug-in to generate and solve Sudoku puzzles.</description>
+		<topic href="html/overview.html" label="Overview"/>
+		<topic href="html/using.html" label="Using the Puzzle Solver"/>
+		<topic href="html/menu.html" label="Menu and Toolbar Items"/>
+		<topic href="html/preferences.html" label="Preference Settings"/>
+	</context>
+	...
+</contexts>@

@@ -1,0 +1,84 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@// @;
+
+
+1.1
+date	2006.06.05.09.32.34;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	e404483fa322fa5;
+filename	SampleView.java;
+
+
+desc
+@@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@package drawtestview.views;
+
+import org.eclipse.swt.widgets.Canvas;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.ui.part.*;
+import org.eclipse.swt.events.ControlEvent;
+import org.eclipse.swt.events.ControlListener;
+import org.eclipse.swt.events.PaintEvent;
+import org.eclipse.swt.events.PaintListener;
+import org.eclipse.swt.graphics.GC;
+import org.eclipse.swt.SWT;
+import org.kellerman.DrawTest;
+
+public class SampleView extends ViewPart {
+
+	Canvas canvas;
+	
+	public void createPartControl(Composite parent) {
+		canvas = new Canvas(parent, SWT.EMBEDDED | SWT.DOUBLE_BUFFERED);
+		canvas.addPaintListener(new PaintListener() {
+			public void paintControl(PaintEvent e) {
+				draw(e.gc);
+			}
+		});
+		canvas.addControlListener(new ControlListener() {
+			public void controlMoved(ControlEvent e) {
+				handleControlEvent();
+			}
+
+			public void controlResized(ControlEvent e) {
+				handleControlEvent();
+			}
+		});
+	}
+	
+	public void setFocus() {
+		canvas.setFocus();
+	}
+
+	
+	public void handleControlEvent() {
+		canvas.setLocation(canvas.getParent().getLocation());
+		canvas.setSize(canvas.getParent().getClientArea().width, canvas
+				.getParent().getClientArea().height);
+		redraw();
+	}
+	
+	public void redraw() {
+		canvas.redraw();
+	}
+	
+	public void draw(GC gc) {
+		Display display = canvas.getDisplay();
+		DrawTest.performDraw(display, gc);
+	}
+}@

@@ -1,0 +1,10 @@
+<contexts>
+	<context id="main" title="Sudoku Puzzle Solver">
+		<description>Eclipse plug-in to generate and solve Sudoku puzzles.</description>
+		<topic href="html/overview.html" label="Overview"/>
+		<topic href="html/using.html" label="Using the Puzzle Solver"/>
+		<topic href="html/menu.html" label="Menu and Toolbar Items"/>
+		<topic href="html/preferences.html" label="Preference Settings"/>
+	</context>
+	...
+</contexts>

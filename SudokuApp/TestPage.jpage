@@ -1,0 +1,12 @@
+Puzzle p = new Puzzle("d:/Temp/puzzle2.txt");
+p.solve();
+p.getInputMatrix().printMatrix();
+p.getSolutionMatrix().printMatrix();
+
+String s = new String();
+s = "";
+s.length()
+
+new Float(9.0F).intValue()
+
+9 % 3

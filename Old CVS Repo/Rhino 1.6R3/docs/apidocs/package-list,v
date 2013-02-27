@@ -1,0 +1,32 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.37.25;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	a4c45060f4a7b02;
+filename	package-list;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@org.mozilla.javascript
+org.mozilla.javascript.debug
+org.mozilla.javascript.optimizer
+org.mozilla.javascript.serialize
+@

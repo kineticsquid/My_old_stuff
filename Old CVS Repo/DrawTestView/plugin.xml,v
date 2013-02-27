@@ -1,0 +1,48 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.06.05.09.32.34;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	e404483fa322fa5;
+filename	plugin.xml;
+
+
+desc
+@@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="Sample Category"
+            id="DrawTestView">
+      </category>
+      <view
+            name="Sample View"
+            icon="icons/sample.gif"
+            category="DrawTestView"
+            class="drawtestview.views.SampleView"
+            id="drawtestview.views.SampleView">
+      </view>
+   </extension>
+
+</plugin>
+@

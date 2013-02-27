@@ -1,0 +1,55 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.33.31;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	16fc45060e6b7829;
+filename	Lesson7b.html;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@
+<HTML>
+<HEAD>
+<TITLE>Using dot syntax</TITLE>
+<SCRIPT Language="JavaScript">
+<!--
+function changeLabel(){
+  if (document.buttonDemo.onOffButton.value==" ON "){
+    document.buttonDemo.onOffButton.value=" OFF"
+    }
+  else{
+    document.buttonDemo.onOffButton.value=" ON "
+    }
+  }
+//-->
+</SCRIPT>
+</HEAD>
+
+<BODY bgcolor="white">
+<P>
+<FORM name="buttonDemo">
+<INPUT type="Button" value=" ON " name="onOffButton" 
+onClick="changeLabel()">
+</FORM>
+</BODY>
+</HTML>
+
+@

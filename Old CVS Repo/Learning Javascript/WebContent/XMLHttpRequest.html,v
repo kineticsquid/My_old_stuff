@@ -1,0 +1,91 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.33.31;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	16fc45060e6b7829;
+filename	XMLHttpRequest.html;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>XMLHttpRequest</title>
+<script src="yahoo.js"></script>
+<script src="event.js"></script>
+<script src="connection.js"></script>
+<script type="text/javascript">
+
+	var eclipseBugzillaUrl = "https://bugs.eclipse.org/bugs/show_bug.cgi?id="
+
+	var handleSuccess = function(o) {
+		alert("success")
+		document.all.output.innerHTML = "<h1>Success</h1> "
+		document.all.output.innerHTML += "Arguments <br> foo: " + o.argument.foo
+		document.all.output.innerHTML += " <br> bar: " + o.argument.bar
+		document.all.output.innerHTML += "<br> <br> "
+		document.all.output.innerHTML += o.responseText
+	}
+	
+	var handleFailure = function(o) {
+		alert("failure")
+		document.all.output.innerHTML = "<h1>Failure</h1> "
+		document.all.output.innerHTML += "Arguments <br> foo: " + o.argument.foo
+		document.all.output.innerHTML += " <br> bar: " + o.argment.bar
+		document.all.output.innerHTML += "<br> <br> "
+		document.all.output.innerHTML += o.responseText
+	}
+	
+	var callback = {
+		success: handleSuccess,
+		failure: handleFailure,
+		timeout: 5000,
+		argument: {foo: "foo", bar: "bar"}
+	}
+	
+	function makeXMLHttpRequest() {
+		var url = eclipseBugzillaUrl + document.all.bug.value
+		alert(url)
+		if (typeof netscape != 'undefined' && typeof netscape.security != 'undefined') {
+			try {
+				netscape.security.PrivilegeManager.enablePrivilege('UniversalBrowserRead')
+			} catch (e) {
+				alert('Error ' + e.message + ' occurred.')
+			}
+		}
+		var transaction = YAHOO.util.Connect.asyncRequest('GET', url, callback, null); 
+	}
+</script>
+</head>
+<body>
+<h1>XMLHttpRequest Example</h1>
+<div title="Input" id="input" align="left">
+<form name="inputForm">
+<input type="text" name="bug">
+<br>
+<input type="button" name="get" value="Get Bug"	onclick="makeXMLHttpRequest()">
+</form>
+</div>
+<div title="Output" id="output">
+</div>
+</body>
+</html>@

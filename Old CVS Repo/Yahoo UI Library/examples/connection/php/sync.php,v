@@ -1,0 +1,46 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.38.38;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	b;
+permissions	666;
+commitid	b5845060f827bb8;
+filename	sync.php;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@<?php
+
+header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+
+// always modified
+header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+
+// HTTP/1.1
+header("Cache-Control: no-store, no-cache, must-revalidate");
+header("Cache-Control: post-check=0, pre-check=0", false);
+
+$num = mt_rand(0,10);
+sleep($num);
+echo('<span>This request responded in '.$num.' seconds. </span>');
+
+?>
+
+
+@

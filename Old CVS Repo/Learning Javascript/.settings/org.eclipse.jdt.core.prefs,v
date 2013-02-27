@@ -1,0 +1,35 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.33.32;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	16fc45060e6b7829;
+filename	org.eclipse.jdt.core.prefs;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@#Mon Sep 04 22:00:14 EDT 2006
+eclipse.preferences.version=1
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.2
+org.eclipse.jdt.core.compiler.compliance=1.4
+org.eclipse.jdt.core.compiler.problem.assertIdentifier=warning
+org.eclipse.jdt.core.compiler.problem.enumIdentifier=warning
+org.eclipse.jdt.core.compiler.source=1.3
+@

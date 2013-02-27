@@ -1,0 +1,55 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2006.11.09.05.02.45;	author jk;	state dead;
+branches;
+next	1.1;
+deltatype	text;
+kopt	kv;
+permissions	444;
+commitid	13184552b6744c01;
+filename	Test.jpage;
+
+1.1
+date	2006.06.05.09.34.34;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	15a44483faaa312d;
+filename	Test.jpage;
+
+
+desc
+@@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@int ms = 9; 
+BitSet b = new BitSet(ms*ms);
+b.set(1*ms+0);
+int i = b.nextSetBit(0);
+int row = i / ms;
+int col = i % ms;
+System.out.println(row);
+System.out.println(col);
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@@
+

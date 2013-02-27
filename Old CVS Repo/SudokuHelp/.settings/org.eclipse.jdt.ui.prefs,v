@@ -1,0 +1,31 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.11.09.05.02.44;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	1604552b6744c01;
+filename	org.eclipse.jdt.ui.prefs;
+
+
+desc
+@@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@#Mon Sep 11 14:13:05 EDT 2006
+eclipse.preferences.version=1
+internal.default.compliance=default
+@

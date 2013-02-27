@@ -1,0 +1,37 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.38.40;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	b5845060f827bb8;
+filename	README;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@CSS Grids Release Notes
+
+*** version 0.11.0 ***
+
+* Removed line #43 because it set an already-set value. 
+  Was: ".yui-t7  #main .yui-b{min-width:750px;}"
+  
+*** version 0.10.0 ***
+
+* Initial release.@

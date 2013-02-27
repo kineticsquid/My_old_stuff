@@ -1,0 +1,32 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.38.35;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	b5845060f827bb8;
+filename	ie.css;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@#container { float: none; }
+#header h1 { margin-left: 24px; }
+#content { margin-left: 25px; }
+#pageTitle {top:10px;}
+@

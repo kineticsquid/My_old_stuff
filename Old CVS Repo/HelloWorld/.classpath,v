@@ -1,0 +1,35 @@
+head	1.1;
+access;
+symbols
+	A1:1.1;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2008.01.19.02.50.12;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	de047916564788c;
+filename	.classpath;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial Load
+@
+text
+@<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
+@

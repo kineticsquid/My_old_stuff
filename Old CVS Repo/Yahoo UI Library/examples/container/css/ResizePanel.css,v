@@ -1,0 +1,42 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.38.36;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	b5845060f827bb8;
+filename	ResizePanel.css;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@.panel {
+	overflow:visible;
+}
+
+.panel .bd {
+	overflow:auto;
+}
+
+.panel .ft {
+	padding:0px;
+	height:4px;
+	font-size:4px;
+	background-color:#CCC;
+}
+@

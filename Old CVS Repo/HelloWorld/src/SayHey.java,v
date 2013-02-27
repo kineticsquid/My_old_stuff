@@ -1,0 +1,41 @@
+head	1.1;
+access;
+symbols
+	A1:1.1;
+locks; strict;
+comment	@// @;
+
+
+1.1
+date	2008.01.19.02.50.13;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	de047916564788c;
+filename	SayHey.java;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial Load
+@
+text
+@
+public class SayHey {
+
+	/**
+	 * @@param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hey");
+	}
+
+}
+@

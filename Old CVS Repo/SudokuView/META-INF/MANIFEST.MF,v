@@ -1,0 +1,41 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.06.05.09.34.35;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	15a44483faaa312d;
+filename	MANIFEST.MF;
+
+
+desc
+@@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SudokuView Plug-in
+Bundle-SymbolicName: SudokuView; singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: sudokuview.Activator
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ Sudoku,
+ SudokuHelp
+Eclipse-LazyStart: true
+@

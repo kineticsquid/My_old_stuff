@@ -1,0 +1,51 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.38.37;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	b5845060f827bb8;
+filename	CheckOnClickNode.js;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@/* Copyright (c) 2006 Yahoo! Inc. All rights reserved. */
+
+YAHOO.example.CheckOnClickNode = function(oData, oParent, expanded, checked) {
+	if (oParent) { 
+		this.init(oData, oParent, expanded);
+		this.setUpLabel(oData);
+		this.checked = checked;
+	}
+};
+
+YAHOO.example.CheckOnClickNode.prototype = new YAHOO.widget.TaskNode();
+
+YAHOO.example.CheckOnClickNode.prototype.getCheckLink = function() { 
+	return "var n=YAHOO.widget.TreeView.getNode(\'" + this.tree.id + "\'," + 
+		this.index + "); " +
+        "var r = n.checkClick(); " +
+        "YAHOO.example.customCheckClickFunction(n);" +
+        "return r;";
+};
+
+YAHOO.example.customCheckClickFunction = function(node) {
+    alert(node.checked + "(" + node.checkState + ")");
+};
+@

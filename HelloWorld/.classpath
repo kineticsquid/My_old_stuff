@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Gson"/>
+	<classpathentry kind="lib" path="/Gson/google-gson-2.2.2/gson-2.2.2.jar" sourcepath="/Gson/google-gson-2.2.2/gson-2.2.2-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/Gson/google-gson-2.2.2/gson-2.2.2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry combineaccessrules="false" kind="src" path="/Sudoku"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

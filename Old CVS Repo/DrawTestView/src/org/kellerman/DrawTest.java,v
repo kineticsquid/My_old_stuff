@@ -1,0 +1,81 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@// @;
+
+
+1.1
+date	2006.06.05.09.32.35;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	e404483fa322fa5;
+filename	DrawTest.java;
+
+
+desc
+@@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@package org.kellerman;
+
+import java.util.Date;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.graphics.GC;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+
+public class DrawTest {
+
+	/**
+	 * @@param args
+	 */
+	
+	public static void main(String[] args) {
+
+		Display display = new Display();
+		Shell shell = new Shell(display);
+		shell.setText("Draw Test");
+		shell.setSize(700, 700);
+		GC gc = new GC(shell);
+		shell.open();
+		performDraw(display, gc);
+		gc.dispose();
+		while (!shell.isDisposed()) {
+			if (!display.readAndDispatch()) {
+				display.sleep();
+			}
+		}
+		display.dispose();
+	}
+
+	public static void performDraw(Display display, GC gc) {
+		Date d = new Date();
+		System.out.println("performDraw");
+		System.out.println(d.getTime());
+		gc.setBackground(display.getSystemColor(SWT.COLOR_BLUE));
+		for (int i = 0; i < 10; i++) {
+			for (int j = 0; j < 10; j++) {
+				gc.fillRectangle(i*55 + 5, j * 55 + 5, 50, 50);
+			}
+		}
+		System.out.println(d.getTime());
+		gc.setBackground(display.getSystemColor(SWT.COLOR_RED));
+		gc.setAlpha(63);
+		for (int i = 0; i < 10; i++) {
+			for (int j = 0; j < 10; j++) {
+				gc.fillRectangle(i*55 + 20, j * 55 + 20, 50, 50);
+			}
+		}
+		System.out.println(d.getTime());
+	}
+}
+@

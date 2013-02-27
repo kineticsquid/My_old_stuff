@@ -1,0 +1,37 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.06.05.09.33.04;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	11b04483fa4f3004;
+filename	doSpellingSuggestionResponse.xml;
+
+
+desc
+@@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@<?xml version='1.0' encoding='UTF-8'?>
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance" xmlns:xsd="http://www.w3.org/1999/XMLSchema">
+  <SOAP-ENV:Body>
+    <ns1:doSpellingSuggestionResponse xmlns:ns1="urn:GoogleSearch" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+      <return xsi:type="xsd:string">britney spears</return>
+    </ns1:doSpellingSuggestionResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+@

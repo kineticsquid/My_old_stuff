@@ -1,0 +1,55 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.38.31;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	b5845060f827bb8;
+filename	README;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@Logger Release Notes
+
+
+
+*** version 0.11.3 ***
+
+* The Logger static method enableFirebug() has been RENAMED to
+enableBrowserConsole().
+
+* The Logger static method disableFirebug() has been RENAMED to
+disableBrowserConsole().
+
+* By default, the Logger will not automatically output to Firebug or Safari's
+JavaScript console. To enable this feature, implementers should now explicitly call
+YAHOO.widget.Logger.enableBrowserConsole().
+
+* Implementers may now cap the size of the YAHOO.widget.Logger stack by setting
+the property YAHOO.widget.Logger.maxStackEntries.
+
+* Implementers may now control the number of items displayed in each console by
+setting the LogReader properties thresholdMax and thresholdMin.
+
+
+
+*** version 0.11.0 ***
+
+* Initial release
+@

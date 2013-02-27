@@ -1,0 +1,89 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.06.05.09.34.16;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	10984483fa9830f3;
+filename	menu.html;
+
+
+desc
+@@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <title>Menu and Toolbar Items</title>
+</head>
+<body>
+<h1>Menu and Toolbar Items</h1>
+Commands to operate the puzzle are available from the Sudoku view menu,
+the toolbar, and through keystrokes. Note, the actions are enabled or
+disabled according to the state of the puzzle. So, for example, you can
+only lock input values when you have values entered and solve the
+puzzle only when you have locked the input values.<br>
+<h2>Menu Items</h2>
+Menu items are available from the Sudoku view menu by clicking on the
+menu button (the triangle to the right of the <span
+ style="font-weight: bold;">Solve Puzzle</span> button).<br>
+<img alt="View Menu" title="View Menu" src="../images/viewmenu.gif"
+ style="width: 211px; height: 120px;"><br>
+<br>
+<span style="font-weight: bold;">New Puzzle</span> - terminate this
+puzzle and start a new one.<br>
+<span style="font-weight: bold;">Lock Inputs</span> - lock the cells
+with values as the input cells. You much have value(s) entered first.
+This enables the <span style="font-weight: bold;">Hint</span> and <span
+ style="font-weight: bold;">Solve Puzzle</span> items.<br>
+<span style="font-weight: bold;">Hint </span>- fill in the selected
+cell with the value from the solution.<br>
+<span style="font-weight: bold;">Solve Puzzle</span> - fill in the
+entire puzzle with the solution.<br>
+<h2>Toolbar Items</h2>
+<img alt="New Puzzle" title="New Puzzle" src="../images/new_wiz.png"
+ style="width: 16px; height: 16px;"> -
+<span style="font-weight: bold;">New Puzzle</span><br>
+<img alt="Lock Inputs" title="Lock Inputs" src="../images/lock.png"
+ style="width: 16px; height: 16px;"> -
+<span style="font-weight: bold;">Lock Inputs</span><br>
+<img alt="Hint" title="Hint" src="../images/help.png"
+ style="width: 16px; height: 16px;"> -
+<span style="font-weight: bold;">Hint</span><br>
+<img alt="Solve Puzzle" title="Solve Puzzle"
+ src="../images/calculator.png" style="width: 16px; height: 16px;"> -
+<span style="font-weight: bold;">Solve Puzzle</span><br>
+<h2>Keystrokes</h2>
+For quicker action, instead of using one of the menu or toolbar items,
+you can affect a command with its assigned keystroke.<br>
+"N" - <span style="font-weight: bold;">New Puzzle</span><br>
+"L" - <span style="font-weight: bold;">Lock Inputs</span><br>
+"H" - <span style="font-weight: bold;">Hint</span><br>
+"S" - <span style="font-weight: bold;">Solve Puzzle<br>
+<br>
+</span>
+<div style="text-align: center;"><font size="-1">Copyright 2006 by John
+Kellerman</font><br>
+<span style="font-weight: bold;"></span></div>
+<br>
+<br>
+<br>
+</body>
+</html>
+@

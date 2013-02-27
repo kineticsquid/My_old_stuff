@@ -1,0 +1,158 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2006.11.09.05.02.45;	author jk;	state Exp;
+branches;
+next	1.1;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	13184552b6744c01;
+filename	plugin.xml;
+
+1.1
+date	2006.06.05.09.34.34;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	15a44483faaa312d;
+filename	plugin.xml;
+
+
+desc
+@@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="Sudoku"
+            visible="true"
+            id="SudokuView.actionSet">
+         <menu
+               label="&amp;Sudoku"
+               id="SudokuMenu">
+            <separator
+                  name="sudokuGroup">
+            </separator>
+         </menu>
+         <action
+               label="&amp;Open Sudoku Puzzle"
+               icon="icons/sudoku.gif"
+               class="sudokuview.actions.OpenAction"
+               tooltip="Set defined cells as inputs"
+               menubarPath="sudokuMenu/sudokuGroup"
+               toolbarPath="sudokuGroup"
+               id="sudokuview.actions.openAction">
+         </action>
+      </actionSet>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="Sudoku"
+            id="Sudoku">
+      </category>
+      <view
+            name="Sudoku Puzzle"
+            icon="icons/sudoku.gif"
+            category="Sudoku"
+            class="sudokuview.views.SudokuView"
+            id="sudokuview.views.SudokuView">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="sudokuview.preferences.SudokuPreferencePage"
+            id="sudokuview.preferences.SudokuPreferencePage"
+            name="Sudoku"/>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer class="sudokuview.preferences.PreferenceInitializer"/>
+   </extension>
+   <extension
+         point="org.eclipse.ui.themes">
+      <themeElementCategory
+            id="Sudoku.presentation"
+            label="Sudoku"/>
+      <fontDefinition
+            defaultsTo="org.eclipse.jface.dialogfont"
+            id="Sudoku.puzzleFontPreference"
+            categoryId="Sudoku.presentation"       
+            label="Puzzle Font">
+        	<description>
+        	Font used to display the numbers in the puzzle matrix
+        	</description>
+      </fontDefinition>
+      <colorDefinition
+            id="Sudoku.matrixColorPreference"
+      		categoryId="Sudoku.presentation"
+      		label="Matrix Color"
+      		value="COLOR_WHITE">
+  			<description>
+  			Color of the Sudoku matrix
+  			</description>
+  	  </colorDefinition>
+      <colorDefinition
+            id="Sudoku.backgroundColorPreference"
+      		categoryId="Sudoku.presentation"
+      		label="Puzzle Background Color"
+      		value="COLOR_WIDGET_BACKGROUND">
+  			<description>
+  			Color of the puzzle view background
+  			</description>
+  	  </colorDefinition>
+      <colorDefinition
+            id="Sudoku.inputColorPreference"
+      		categoryId="Sudoku.presentation"
+      		label="Input Cell Color"
+      		value="COLOR_WIDGET_LIGHT_SHADOW">
+  			<description>
+  			Color of the input cells in the puzzle matrix
+  			</description>
+  	  </colorDefinition>
+       <colorDefinition
+            id="Sudoku.errorColorPreference"
+      		categoryId="Sudoku.presentation"
+      		label="Error Cell Color"
+      		value="COLOR_RED">
+  			<description>
+  			Color used to share error cells in the puzzle matrix
+  			</description>
+  	  </colorDefinition>         
+   </extension>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts plugin="SudokuHelp" file="contexts.xml" />
+   </extension>
+</plugin>
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d106 1
+a106 1
+      <contexts file="contexts.xml" plugin="SudokuHelp"/>
+@
+

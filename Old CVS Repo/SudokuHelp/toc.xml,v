@@ -1,0 +1,41 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.06.05.09.34.17;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	10984483fa9830f3;
+filename	toc.xml;
+
+
+desc
+@@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Sudoku">
+	<topic label="Overview"  href="html/overview.html"> 
+	</topic>
+	<topic label="Using the Puzzle Solver"  href="html/using.html"> 
+	</topic>
+	<topic label="Menu and Toolbar Items"  href="html/menu.html"> 
+	</topic>
+	<topic label="Preference Settings"  href="html/preferences.html"> 
+	</topic>
+</toc>
+@

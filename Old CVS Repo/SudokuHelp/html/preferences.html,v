@@ -1,0 +1,60 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.06.05.09.34.16;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	10984483fa9830f3;
+filename	preferences.html;
+
+
+desc
+@@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <title>Preference Settings</title>
+</head>
+<body>
+<h1>Preference Settings<br>
+</h1>
+To change the preference settings for the puzzle solver, select <span
+ style="font-weight: bold;">Window </span>&gt; <span
+ style="font-weight: bold;">Preferences</span> and then <span
+ style="font-weight: bold;">Sudoku</span>.<br>
+<br>
+<img alt="Sudoku Preferences" title="Sudoku Preferences"
+ src="../images/prefs1.gif" style="width: 376px; height: 290px;"><br>
+<br>
+At the top of the page is a link to Sudoku color and font preferences.
+You can also access these by selecting <span style="font-weight: bold;">General<span
+ style="font-weight: bold;"> &gt; </span>Appearance</span> &gt; <span
+ style="font-weight: bold;">Colors and Fonts</span> in the Preferences
+dialog.<br>
+<br>
+<img alt="Color and Font Preferences" title="Color and Font Preferences"
+ src="../images/prefs2.gif" style="width: 418px; height: 198px;"><br>
+<br>
+<div style="text-align: center;"><font size="-1">Copyright 2006 by John
+Kellerman</font><br>
+</div>
+</body>
+</html>
+@

@@ -1,0 +1,69 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.38.32;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	b5845060f827bb8;
+filename	getxy.html;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>DOM Example: getXY</title>
+
+<script type="text/javascript" src="../../build/yahoo/yahoo.js"></script>
+<script type="text/javascript" src="../../build/event/event.js"></script>
+<script type="text/javascript" src="../../build/dom/dom.js"></script>
+
+<script type="text/javascript">
+YAHOO.namespace('example.dom');
+
+YAHOO.example.dom.init = function() {
+
+   var move = function(e) {
+      var xy = YAHOO.util.Dom.getXY('end');
+
+      YAHOO.util.Dom.setXY('test', xy);
+   };
+   
+   YAHOO.util.Event.addListener(document, 'click', move);
+};
+
+YAHOO.util.Event.addListener(window, 'load', YAHOO.example.dom.init);
+</script>
+
+<link rel="stylesheet" type="text/css" href="css/dom.css">
+</head>
+
+<body>
+<div id="doc">
+   <h1>DOM Example: getXY</h1>
+   <p>This example demonstrates how to use Dom.getXY to get an elements position.</p>
+   <p>Click anywhere and the grey element will move to the red element.</p>
+   <div id="test"></div>
+   <div id="end"></div>
+</div>
+
+
+</body>
+</html>
+@

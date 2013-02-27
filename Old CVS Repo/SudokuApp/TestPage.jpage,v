@@ -1,0 +1,40 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.06.05.09.33.59;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	17a84483fa8730bb;
+filename	TestPage.jpage;
+
+
+desc
+@@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@Puzzle p = new Puzzle("d:/Temp/puzzle2.txt");
+p.solve();
+p.getInputMatrix().printMatrix();
+p.getSolutionMatrix().printMatrix();
+
+String s = new String();
+s = "";
+s.length()
+
+new Float(9.0F).intValue()
+
+9 % 3
+@

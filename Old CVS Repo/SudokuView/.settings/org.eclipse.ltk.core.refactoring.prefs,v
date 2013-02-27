@@ -1,0 +1,31 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.06.05.09.34.35;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	15a44483faaa312d;
+filename	org.eclipse.ltk.core.refactoring.prefs;
+
+
+desc
+@@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@#Sun Mar 19 11:38:12 EST 2006
+eclipse.preferences.version=1
+org.eclipse.ltk.core.refactoring.enable.project.refactoring.history=false
+@

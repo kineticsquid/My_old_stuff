@@ -1,0 +1,32 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.33.32;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	16fc45060e6b7829;
+filename	org.eclipse.jst.common.project.facet.core.prefs;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@#Mon Sep 04 22:00:18 EDT 2006
+classpath.helper/org.eclipse.jdt.launching.JRE_CONTAINER\:\:org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType\:\:Java50/owners=jst.java\:1.4
+classpath.helper/org.eclipse.jst.server.core.container\:\:org.eclipse.jst.server.tomcat.runtimeTarget\:\:Apache\ Tomcat\ v5.5/owners=jst.web\:2.4
+eclipse.preferences.version=1
+@

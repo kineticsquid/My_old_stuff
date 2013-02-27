@@ -1,0 +1,52 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.06.05.09.34.16;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	10984483fa9830f3;
+filename	overview.html;
+
+
+desc
+@@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <title>Main Topic</title>
+</head>
+<body>
+<h1>Overview</h1>
+Sudoku Puzzle Solver is a simple <a href="http://www.eclipse.org/">Eclipse
+</a>view that allows you to solve <a href="http://www.sudoku.com/">Sudoku
+</a>puzzles.&nbsp; You can create a new blank puzzle, enter pre-set
+values yourself, and then solve the puzzle. Or you can have a puzzle
+with pre-set values generated for you.<br>
+<br>
+To start the Sudoku Puzzle Solver, that is to open the Sudoku view,
+select the <span style="font-weight: bold;">Sudoku</span> menu item
+and then <span style="font-weight: bold;">Open Sudoku Puzzle</span>.<br>
+<br>
+<div style="text-align: center;"><font size="-1">Copyright 2006 by John
+Kellerman</font><br>
+</div>
+</body>
+</html>
+@

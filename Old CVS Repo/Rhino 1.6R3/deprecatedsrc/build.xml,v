@@ -1,0 +1,55 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.37.26;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	a4c45060f4a7b02;
+filename	build.xml;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@<?xml version="1.0" encoding="utf-8"?>
+
+<project name="src" default="compile" basedir="..">
+
+  <property file="build.properties"/>
+
+  <target name="compile">
+    <javac srcdir="deprecatedsrc"
+           destdir="${classes}"
+           includes="org/**/*.java"
+           deprecation="on"
+           debug="${debug}"
+	   target="${target-jvm}"
+ 	   source="${source-level}"
+	   >
+    </javac>
+  </target>
+
+  <target name="copy-source">
+    <mkdir dir="${dist.dir}/deprecatedsrc"/>
+    <copy todir="${dist.dir}/deprecatedsrc">
+      <fileset dir="deprecatedsrc"
+               includes="**/*.java,**/*.properties,**/*.xml,manifest"/>
+    </copy>
+  </target>
+
+</project>
+@

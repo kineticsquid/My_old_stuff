@@ -1,0 +1,38 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.06.05.09.32.35;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	e404483fa322fa5;
+filename	MANIFEST.MF;
+
+
+desc
+@@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: DrawTestView Plug-in
+Bundle-SymbolicName: DrawTestView; singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: drawtestview.Activator
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Eclipse-LazyStart: true
+@

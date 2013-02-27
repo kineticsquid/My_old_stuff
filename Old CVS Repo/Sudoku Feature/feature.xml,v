@@ -1,0 +1,77 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.06.05.09.37.43;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	14944483fb673397;
+filename	feature.xml;
+
+
+desc
+@@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="Sudoku"
+      label="Sudoku"
+      version="1.0.0"
+      provider-name="John Kellerman">
+
+   <description>
+      Eclipse view for generating and solving Sudoku puzzles
+   </description>
+
+   <copyright>
+      Copyright 2006 by John Kellerman
+   </copyright>
+
+   <license url="http://www.eclipse.org/legal/epl-v10.html">
+      Made available under the terms of the Eclipse Public License
+(EPL).
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.help"/>
+      <import plugin="org.eclipse.core.resources"/>
+   </requires>
+
+   <plugin
+         id="Sudoku"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="SudokuHelp"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="SudokuView"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
+@

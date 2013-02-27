@@ -1,0 +1,49 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.33.32;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	16fc45060e6b7829;
+filename	Lesson7b2.html;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Lesson 7b2</title>
+<script Language="JavaScript">
+function toggleButton() {
+	if (document.onOff.onOffButton.value == "ON") {
+		document.onOff.onOffButton.value = "OFF"
+	} else {
+		document.onOff.onOffButton.value  = "ON"
+	}
+}
+</script>
+</head>
+<body>
+<h1>Lesson 7b2</h1>
+<form name="onOff">
+<input type="Button" name="onOffButton" value="ON" onclick="toggleButton()">
+</form>
+</body>
+</html>@

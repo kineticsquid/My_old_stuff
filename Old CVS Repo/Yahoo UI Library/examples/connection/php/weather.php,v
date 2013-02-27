@@ -1,0 +1,47 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.38.38;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	b;
+permissions	666;
+commitid	b5845060f827bb8;
+filename	weather.php;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@<?php
+
+header("Content-Type:text/xml");
+
+$url = 'http://xml.weather.yahoo.com/forecastrss?'.getenv('QUERY_STRING');
+
+function getResource($url){
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        $result = curl_exec($ch);
+        curl_close($ch);
+
+        return $result;
+}
+
+$feed = getResource($url);
+echo $feed;
+?>
+@

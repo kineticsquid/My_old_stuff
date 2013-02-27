@@ -1,0 +1,35 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.38.40;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	b;
+permissions	666;
+commitid	b5845060f827bb8;
+filename	somedata.php;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@<?php
+
+print "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis faucibus laoreet lectus. Aliquam erat volutpat. Nulla faucibus ultrices justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi pulvinar pharetra ante. Duis gravida nisi id ligula. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed interdum fermentum odio. In hac habitasse platea dictumst. Mauris semper. Aliquam vitae urna. Duis metus. Phasellus pede nisi, vulputate et, volutpat at, suscipit nec, arcu.";
+
+print "Nam non est a diam faucibus porta. Donec velit nisl, nonummy et, auctor vel, sollicitudin nec, justo. Nulla elementum convallis leo. Vivamus diam ligula, elementum in, consequat eget, luctus nec, tortor. Curabitur sollicitudin nibh sed augue. Aliquam nulla est, tempus eget, vulputate non, consectetuer feugiat, lorem. Quisque in leo. Donec dolor leo, blandit sit amet, cursus et, vehicula nec, diam. Proin massa leo, cursus eget, blandit eget, nonummy in, dolor. Aliquam erat volutpat. Nunc fermentum. Morbi consectetuer.";
+
+sleep(3);
+?> @

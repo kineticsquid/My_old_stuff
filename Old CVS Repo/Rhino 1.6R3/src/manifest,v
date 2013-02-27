@@ -1,0 +1,31 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2006.09.12.01.37.26;	author jk;	state Exp;
+branches;
+next	;
+deltatype	text;
+kopt	kv;
+permissions	666;
+commitid	a4c45060f4a7b02;
+filename	manifest;
+
+
+desc
+@@
+
+
+1.1
+log
+@initial commit
+@
+text
+@Manifest-Version: 1.0
+Main-Class: org.mozilla.javascript.tools.shell.Main
+Class-Path: xbean.jar
+@
