@@ -8,17 +8,24 @@
 </head>
 <body>
 <script type="text/javascript">
-// var f = new Fred();
-// f.bar();
+var a = new Array();
 var size = 9;
-var input = "[[0,7,0,6,0,9,0,8,0],[4,0,2,0,0,0,0,0,3],[0,0,9,4,1,0,2,5,0],[8,0,0,0,9,0,3,0,5],[0,0,4,8,0,5,6,0,0],[5,0,1,0,7,0,0,0,9],[0,6,8,0,5,2,4,0,0],[1,0,0,0,0,0,7,0,6],[0,4,0,3,0,1,0,9,0]]";
+// var input = "[[0,7,0,6,0,9,0,8,0],[4,0,2,0,0,0,0,0,3],[0,0,9,4,1,0,2,5,0],[8,0,0,0,9,0,3,0,5],[0,0,4,8,0,5,6,0,0],[5,0,1,0,7,0,0,0,9],[0,6,8,0,5,2,4,0,0],[1,0,0,0,0,0,7,0,6],[0,4,0,3,0,1,0,9,0]]";
+var input = "[[1,7,1,6,0,9,0,8,0],[4,0,2,0,0,0,0,0,3],[0,0,9,4,1,0,2,5,0],[8,0,0,0,9,0,3,0,5],[0,0,4,8,0,5,6,0,0],[5,0,1,0,7,0,0,0,9],[0,6,8,0,5,2,4,0,0],[1,0,0,0,0,0,7,0,6],[0,4,0,3,0,1,0,9,0]]";
 var puzzle = new SudokuPuzzle(size);
-var i = 1;
-puzzle.setInput(input);
-puzzle.computeSolutionFromInputs();
-var solution = JSON.stringify(puzzle.solutionMatrix.values)
-document.write(answer);
+var inputResult = puzzle.setInput(input);
+if (inputResult) {
+	puzzle.computeSolutionFromInputs();
+	document.writeln("<br>" + puzzle.solutionKnown);
+	var solution = puzzle.getSolutionMatrix();
+	var answer = JSON.stringify(solution);
+	document.write(answer);
+} else {
+	alert("Invalid Input Matrix");
+}
+
 </script>
+<br>
 Barney
 </body>
 </html>

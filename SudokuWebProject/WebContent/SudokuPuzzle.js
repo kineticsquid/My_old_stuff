@@ -6,6 +6,13 @@ function SudokuPuzzle(size) {
 	this.matrixSize = size;
 	this.subMatrixSize = this.matrixSize / 3;
 	this.solutionMatrix = null;
+	this.subMatrixIndex = new Array();
+	for ( var row = 0; row < this.matrixSize; row++) {
+		this.subMatrixIndex[row] = new Array();
+		for ( var column = 0; column < this.matrixSize; column++) {
+			this.subMatrixIndex[row][column] = row - (row % this.subMatrixSize) + (column - (column % this.subMatrixSize)) / 3;
+		}
+	}
 
 	/*
 	 * Array of Arrays that contains the puzzle values. 0 indicates an element
@@ -123,7 +130,6 @@ function SudokuPuzzle(size) {
 		if (valid) {
 			setInputFromMatrix.call(this, inputs);
 			if (!isMatrixValid.call(this)) {
-				alert("Invalid input matrix");
 				return false;
 			} else {
 				return true;
@@ -182,20 +188,24 @@ function SudokuPuzzle(size) {
 		} else {
 			var currentRow = this.emptyElementWithFewestRemainingChoicesRow;
 			var currentColumn = this.emptyElementWithFewestRemainingChoicesColumn;
-			// copy array
-			// start here. check for length of choicesremaining
-			var remainingChoices = this.choicesRemainingForEmptyElement[currentRow][currentColumn]
-					.slice(0);
-			while (remainingChoices.length > 0 && !this.solutionKnown) {
-				var nextValueToTry = remainingChoices.pop();
-				alert("trying " + nextValueToTry + " at [" + currentRow + "," + currentColumn + "]");
-				this.values[currentRow][currentColumn] = nextValueToTry;
-				validateMatrix.call(this, currentRow, currentColumn);
-				computeSolution.call(this);
-				if (!this.solutionKnown) {
-					alert("clearing " + currentRow + "," + currentColumn + "]");
-					this.values[currentRow][currentColumn] = 0;
+			document.writeln("<br>" + currentRow + ", " + currentColumn);
+			if (this.choicesRemainingForEmptyElement[currentRow][currentColumn].length > 0) {
+				// copy array
+				var remainingChoices = this.choicesRemainingForEmptyElement[currentRow][currentColumn]
+						.slice(0);
+				while (remainingChoices.length > 0 && !this.solutionKnown) {
+					var nextValueToTry = remainingChoices.pop();
+					document.writeln("<br> trying " + nextValueToTry + " at ["
+							+ currentRow + "," + currentColumn + "]");
+					this.values[currentRow][currentColumn] = nextValueToTry;
 					validateMatrix.call(this, currentRow, currentColumn);
+					computeSolution.call(this);
+					if (!this.solutionKnown) {
+						document.writeln("<br> clearing " + currentRow + ","
+								+ currentColumn + "]");
+						this.values[currentRow][currentColumn] = 0;
+						validateMatrix.call(this, currentRow, currentColumn);
+					}
 				}
 			}
 		}
@@ -270,24 +280,16 @@ function SudokuPuzzle(size) {
 		}
 		this.subMatrixContents[getSubMatrixFor.call(this, row, column)] = subMatrixValues;
 
-		// Iterate through the current row, current column, and current
-		// subMatrix
+		// Iterate through the entire matrix
 		// calculating valid choices for empty elements.
 		this.emptyElementWithFewestRemainingChoicesRow = -1;
 		this.emptyElementWithFewestRemainingChoicesColumn = -1;
-		for ( var iColumn = 0; iColumn < this.matrixSize; iColumn++) {
-			computeChoicesFor.call(this, row, iColumn);
-		}
 		for ( var iRow = 0; iRow < this.matrixSize; iRow++) {
-			computeChoicesFor.call(this, iRow, column);
-		}
-
-		for ( var iRow = startingRow; iRow < startingRow + this.subMatrixSize; iRow++) {
-			for ( var iColumn = startingColumn; iColumn < startingColumn
-					+ this.subMatrixSize; iColumn++) {
+		for ( var iColumn = 0; iColumn < this.matrixSize; iColumn++) {
 				computeChoicesFor.call(this, iRow, iColumn);
 			}
 		}
+
 	}
 
 	function computeChoicesFor(row, column) {
@@ -392,8 +394,8 @@ function SudokuPuzzle(size) {
 	 * index, an integer between 0 and 8
 	 */
 	function getSubMatrixFor(row, column) {
-		return row - (row % this.subMatrixSize)
-				+ (column - (column % this.subMatrixSize)) / 3;
+		return this.subMatrixIndex[row][column];
+
 	}
 
 	/*
@@ -409,4 +411,8 @@ function SudokuPuzzle(size) {
 			array[int] = value;
 		}
 	}
+	
+	this.getSolutionMatrix = function() {
+		return this.solutionMatrix.values;
+	};
 }
